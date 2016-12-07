@@ -7,7 +7,7 @@ iterator = 0
 
 while True:
     c = m.copy()
-
+    
     c.update(str(iterator))
     test = str(c.hexdigest())
     if test.startswith('00000'):
