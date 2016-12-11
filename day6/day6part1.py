@@ -7,7 +7,6 @@ for i in range(8):
     f = open('day6.txt', 'r')
     for line in f.readlines():
         if len(line) > 2:
-            #print line[i]
             column += line[i]
     
     cnt = Counter(column)
