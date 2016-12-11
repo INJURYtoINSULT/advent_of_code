@@ -11,6 +11,7 @@ for i in range(8):
             column += line[i]
     
     cnt = Counter(column)
-    decrypted += cnt.most_common(1)[0][0]
+    n = len(cnt.most_common())
+    decrypted += cnt.most_common(100)[:-n:-1][0][0]
 print decrypted
     
